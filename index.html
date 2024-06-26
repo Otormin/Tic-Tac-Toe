@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Tic-Tac-Toe</h1>
+        <form id="TicTacToeForm">
+            <input type="text" id="PlayerOneNameInput" placeholder="Player 1 Name">
+            <span id="PlayerOneNameError">Name field for Player One cannot be null</span>
+            <select class="dropDown" id="PlayerOneCharacterInput">
+                <option disabled selected>Choose between X or O</option>
+                <option>X</option>
+                <option>O</option>
+            </select>
+            <span id="PlayerOneCharacterError">Please select either X or O</span>
+
+            <input type="text" id="PlayerTwoNameInput" placeholder="Player 2 Name">
+            <span id="PlayerTwoNameError">Name field for Player Two cannot be null</span>
+            <select class="dropDown" id="PlayerTwoCharacterInput">
+                <option disabled selected>Choose between X or O</option>
+                <option>X</option>
+                <option>O</option>
+            </select>
+            <span id="PlayerTwoCharacterError">Please select either X or O</span>
+            <span id="SameCharacterError">Two players cannot have the same character</span>
+
+            <button id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

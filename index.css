@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: antiquewhite;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.container #TicTacToeForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container #TicTacToeForm input{
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 25rem;
+    font-size: large;
+}
+
+.container #TicTacToeForm span{
+    margin-top: 5px;
+    color: red;
+    display: none;
+}
+
+
+.container #TicTacToeForm input::placeholder{
+    color: black;
+    font-size: large;
+}
+
+.container #TicTacToeForm select{
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 25rem;
+    font-size: large;
+}
+
+.container #TicTacToeForm button{
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background: white;
+    height: 3rem;
+    width: 10rem;
+    font-size: large;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.container #TicTacToeForm button:hover{
+    color: white;
+    background: black;
+}

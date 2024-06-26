@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="TicTacToe.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1 id="message"></h1>
+        <div id="horizontal0"></div>
+        <div id="horizontal3"></div>
+        <div id="horizontal6"></div>
+        <div id="vertical0"></div>
+        <div id="vertical1"></div>
+        <div id="vertical2"></div>
+        <div id="diagonal0"></div>
+        <div id="diagonal2"></div>
+        <div class="row">
+            <!-- &nbsp; is used to create an empty space in a button -->
+            <button id="placementBtn0">&nbsp;</button>
+            <button id="placementBtn1">&nbsp;</button>
+            <button id="placementBtn2">&nbsp;</button>
+        </div>
+        <div class="row">
+            <button id="placementBtn3">&nbsp;</button>
+            <button id="placementBtn4">&nbsp;</button>
+            <button id="placementBtn5">&nbsp;</button>
+        </div>
+        <div class="row">
+            <button id="placementBtn6">&nbsp;</button>
+            <button id="placementBtn7">&nbsp;</button>
+            <button id="placementBtn8">&nbsp;</button>
+        </div>
+        <div class="buttons">
+            <button id="playAgain-btn"> Play Again </button>
+            <button id="quit-btn"> Quit </button>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="announcement"></p>
+        </div>
+    </div> 
+
+    <div id="myModalForTie" class="modalForTie">
+        <div class="modal-content-for-tie">
+            <span class="closeForTie">&times;</span>
+            <p id="announcementForTie"></p>
+        </div>
+    </div> 
+
+    <script src="TicTacToe.js"></script>
+
+</body>
+
+</html>  
