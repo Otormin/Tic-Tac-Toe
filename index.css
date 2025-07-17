@@ -1,74 +1,92 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    background-color: black;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container{
-    background-color: antiquewhite;
-    padding: 50px;
-    border-radius: 20px;
-}
-
-.container #TicTacToeForm{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.container #TicTacToeForm input{
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 20px;
-    width: 25rem;
-    font-size: large;
-}
-
-.container #TicTacToeForm span{
-    margin-top: 5px;
+p{
     color: red;
-    display: none;
 }
 
-
-.container #TicTacToeForm input::placeholder{
-    color: black;
-    font-size: large;
+.container {
+  background-color: antiquewhite;
+  padding: 50px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
 }
 
-.container #TicTacToeForm select{
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 20px;
-    width: 25rem;
-    font-size: large;
+#TicTacToeForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.container #TicTacToeForm button{
-    border-radius: 10px;
-    padding: 10px;
-    cursor: pointer;
-    background: white;
-    height: 3rem;
-    width: 10rem;
-    font-size: large;
-    margin-top: 30px;
-    cursor: pointer;
+#TicTacToeForm input,
+#TicTacToeForm select {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  font-size: large;
 }
 
-.container #TicTacToeForm button:hover{
+#TicTacToeForm span {
+  margin-top: 5px;
+  color: red;
+  display: none;
+}
+
+#TicTacToeForm input::placeholder {
+  color: black;
+  font-size: large;
+}
+
+#TicTacToeForm button {
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background: white;
+  height: 3rem;
+  width: 50%;
+  max-width: 200px;
+  font-size: large;
+  margin-top: 30px;
+}
+
+@media (hover: hover) {
+  #TicTacToeForm button:hover {
     color: white;
     background: black;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  #TicTacToeForm input,
+  #TicTacToeForm select {
+    width: 100%;
+    font-size: medium;
+  }
+
+  #TicTacToeForm button {
+    width: 100%;
+    font-size: medium;
+  }
 }
